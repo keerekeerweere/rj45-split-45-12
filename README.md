@@ -118,6 +118,7 @@ This is a reference wiring project only; no manufacturing outputs are included.
 ## Disclaimer
 
 - This project is an experiment and is provided strictly for informational/reference purposes.
+- This setup is unverified and has not yet been tested end-to-end.
 - No warranty is provided, express or implied.
 - The author(s) accept no responsibility and no liability whatsoever for any damage, loss, malfunction, downtime, legal/compliance issues, or safety incidents resulting from use or misuse of this information.
 - If you do not have the required electrical/networking knowledge, tools, and ability to validate wiring with proper testing equipment, do **not** use this design.
