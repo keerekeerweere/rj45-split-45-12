@@ -40,10 +40,10 @@
   <text x="600" y="314" text-anchor="middle" class="small">1x RJ45 trunk ↔ 2x RJ45</text>
 
   <rect x="500" y="350" width="200" height="40" rx="8" fill="#dcfce7" stroke="#16a34a" />
-  <text x="600" y="376" text-anchor="middle" class="small">Ethernet branch: 1,2,3,6</text>
+  <text x="600" y="376" text-anchor="middle" class="small">J1-A Ethernet branch: 1,2,3,6</text>
 
   <rect x="500" y="400" width="200" height="40" rx="8" fill="#fee2e2" stroke="#ef4444" />
-  <text x="600" y="426" text-anchor="middle" class="small">P1 split-out branch: 1,2,3,6</text>
+  <text x="600" y="426" text-anchor="middle" class="small">J2-B P1 split-out: 1,2,3,6</text>
 
   <!-- Right zone -->
   <rect x="980" y="130" width="760" height="760" rx="18" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
@@ -54,10 +54,10 @@
   <text x="1200" y="314" text-anchor="middle" class="small">1x RJ45 trunk ↔ 2x RJ45</text>
 
   <rect x="1100" y="350" width="200" height="40" rx="8" fill="#dcfce7" stroke="#16a34a" />
-  <text x="1200" y="376" text-anchor="middle" class="small">Ethernet branch: 1,2,3,6</text>
+  <text x="1200" y="376" text-anchor="middle" class="small">J1-A Ethernet branch: 1,2,3,6</text>
 
   <rect x="1100" y="400" width="200" height="40" rx="8" fill="#fee2e2" stroke="#ef4444" />
-  <text x="1200" y="426" text-anchor="middle" class="small">P1 split-out branch: 1,2,3,6</text>
+  <text x="1200" y="426" text-anchor="middle" class="small">J2-B P1 split-out: 1,2,3,6</text>
 
   <rect x="1370" y="230" width="290" height="110" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
   <text x="1515" y="275" text-anchor="middle" class="boxTitle">Ethernet Device</text>
@@ -79,6 +79,11 @@
   <rect x="745" y="420" width="310" height="84" rx="10" fill="#fff7ed" stroke="#fb923c" stroke-width="2" />
   <text x="900" y="450" text-anchor="middle" class="small">P1 mapping through splitter pair:</text>
   <text x="900" y="474" text-anchor="middle" class="small">split-out 1,2,3,6 → trunk 4,5,7,8</text>
+  <rect x="690" y="515" width="420" height="120" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2" />
+  <text x="900" y="548" text-anchor="middle" class="warn">NO CROSSING BETWEEN SIDES</text>
+  <text x="900" y="573" text-anchor="middle" class="small">Valid: A:J1-A ↔ B:J1-A and A:J2-B ↔ B:J2-B</text>
+  <text x="900" y="596" text-anchor="middle" class="small">Also valid (both swapped): Ethernet J2-B on both sides, P1 J1-A on both sides</text>
+  <text x="900" y="619" text-anchor="middle" class="small">Invalid: mixed mapping between sides (one side swapped only)</text>
 
   <!-- Connections left -->
   <line x1="370" y1="285" x2="470" y2="330" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />

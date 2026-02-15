@@ -29,6 +29,13 @@ The setup uses:
 
 ![Complete setup with two passive splitters and two custom RJ12 to RJ45 adapters](images/full-setup-diagram.svg)
 
+## Port Pairing Rule (Critical)
+
+- The two splitter ports must be used consistently end-to-end.
+- If Ethernet is connected to `J1-A` and P1 adapter to `J2-B` on Side A, then on Side B it must also be Ethernet -> `J1-A` and P1 -> `J2-B`.
+- You may swap both services to the other port set (Ethernet -> `J2-B`, P1 -> `J1-A`), but only if you do the same on both sides.
+- Never cross them between sides (`J1-A` <-> `J2-B` mismatch). That is invalid wiring.
+
 ## Pinout Summary
 
 ### 1) Passive RJ45 Splitter (1x RJ45 <-> 2x RJ45)
