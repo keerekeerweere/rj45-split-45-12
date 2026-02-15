@@ -76,6 +76,9 @@
   <rect x="780" y="320" width="240" height="80" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
   <text x="900" y="350" text-anchor="middle" class="boxTitle">Single Existing Cable Run</text>
   <text x="900" y="376" text-anchor="middle" class="small">1x RJ45 (8 wires)</text>
+  <rect x="745" y="420" width="310" height="84" rx="10" fill="#fff7ed" stroke="#fb923c" stroke-width="2" />
+  <text x="900" y="450" text-anchor="middle" class="small">P1 mapping through splitter pair:</text>
+  <text x="900" y="474" text-anchor="middle" class="small">split-out 1,2,3,6 → trunk 4,5,7,8</text>
 
   <!-- Connections left -->
   <line x1="370" y1="285" x2="470" y2="330" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
