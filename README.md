@@ -25,6 +25,10 @@ The setup uses:
 - The custom part is the RJ12 <-> RJ45 wiring mapping used for the DSMR P1 path.
 - The rest of the schematic content is included as reference context.
 
+## Full Setup Diagram
+
+![Complete setup with two passive splitters and two custom RJ12 to RJ45 adapters](images/full-setup-diagram.svg)
+
 ## Pinout Summary
 
 ### 1) Passive RJ45 Splitter (1x RJ45 <-> 2x RJ45)
@@ -33,6 +37,8 @@ For 10/100 Ethernet + P1 sharing on one cable:
 
 - Ethernet branch uses pins `1,2,3,6`
 - P1 branch uses pins `4,5,7,8`
+
+![Passive RJ45 splitter reference](images/RJ45-passive-splitter.png)
 
 | Trunk RJ45 Pin | Ethernet RJ45 Branch | P1 RJ45 Branch |
 |---|---|---|
@@ -72,6 +78,8 @@ For 10/100 Ethernet + P1 sharing on one cable:
 ### 4) Custom RJ12 <-> RJ45 Adapter (This Project)
 
 This custom mapping is used so P1 can run over the splitter's secondary pair set (`4,5,7,8`):
+
+![Custom RJ12 to RJ45 cable mapping](images/rj12-rj45-schema.png)
 
 | RJ12 Pin | P1 Signal | RJ45 Pin (P1 Branch) |
 |---|---|---|

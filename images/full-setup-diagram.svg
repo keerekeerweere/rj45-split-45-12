@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="980" viewBox="0 0 1800 980">
+  <defs>
+    <style>
+      .title { font: 700 34px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 20px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .boxTitle { font: 700 20px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .label { font: 500 16px 'Segoe UI', Arial, sans-serif; fill: #1e293b; }
+      .small { font: 500 14px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .warn { font: 700 16px 'Segoe UI', Arial, sans-serif; fill: #9a3412; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,3 L0,6 z" fill="#334155" />
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1800" height="980" fill="#f8fafc" />
+
+  <text x="900" y="56" text-anchor="middle" class="title">Full Setup: Ethernet + DSMR P1 Over One RJ45 Cable Run</text>
+  <text x="900" y="90" text-anchor="middle" class="subtitle">Uses 2x passive RJ45 splitters + 2x custom RJ12↔RJ45 adapters</text>
+
+  <!-- Left zone -->
+  <rect x="60" y="130" width="760" height="760" rx="18" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+  <text x="80" y="165" class="boxTitle">Side A (near Smart Meter)</text>
+
+  <rect x="100" y="230" width="270" height="110" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
+  <text x="235" y="275" text-anchor="middle" class="boxTitle">Router / Switch</text>
+  <text x="235" y="302" text-anchor="middle" class="small">RJ45 Ethernet</text>
+
+  <rect x="100" y="600" width="270" height="130" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
+  <text x="235" y="645" text-anchor="middle" class="boxTitle">DSMR P1 Smart Meter</text>
+  <text x="235" y="672" text-anchor="middle" class="small">RJ12 P1 port</text>
+
+  <rect x="450" y="560" width="300" height="170" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
+  <text x="600" y="605" text-anchor="middle" class="boxTitle">Custom Adapter A</text>
+  <text x="600" y="632" text-anchor="middle" class="small">RJ12 ↔ RJ45 (P1 mapping)</text>
+  <text x="600" y="660" text-anchor="middle" class="small">Uses RJ45 pins 4/5/7/8</text>
+
+  <rect x="470" y="250" width="260" height="220" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
+  <text x="600" y="287" text-anchor="middle" class="boxTitle">Passive Splitter A</text>
+  <text x="600" y="314" text-anchor="middle" class="small">1x RJ45 trunk ↔ 2x RJ45</text>
+
+  <rect x="500" y="350" width="200" height="40" rx="8" fill="#dcfce7" stroke="#16a34a" />
+  <text x="600" y="376" text-anchor="middle" class="small">Ethernet branch: 1,2,3,6</text>
+
+  <rect x="500" y="400" width="200" height="40" rx="8" fill="#fee2e2" stroke="#ef4444" />
+  <text x="600" y="426" text-anchor="middle" class="small">P1 branch: 4,5,7,8</text>
+
+  <!-- Right zone -->
+  <rect x="980" y="130" width="760" height="760" rx="18" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+  <text x="1000" y="165" class="boxTitle">Side B (near destination devices)</text>
+
+  <rect x="1070" y="250" width="260" height="220" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
+  <text x="1200" y="287" text-anchor="middle" class="boxTitle">Passive Splitter B</text>
+  <text x="1200" y="314" text-anchor="middle" class="small">1x RJ45 trunk ↔ 2x RJ45</text>
+
+  <rect x="1100" y="350" width="200" height="40" rx="8" fill="#dcfce7" stroke="#16a34a" />
+  <text x="1200" y="376" text-anchor="middle" class="small">Ethernet branch: 1,2,3,6</text>
+
+  <rect x="1100" y="400" width="200" height="40" rx="8" fill="#fee2e2" stroke="#ef4444" />
+  <text x="1200" y="426" text-anchor="middle" class="small">P1 branch: 4,5,7,8</text>
+
+  <rect x="1370" y="230" width="290" height="110" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
+  <text x="1515" y="275" text-anchor="middle" class="boxTitle">Ethernet Device</text>
+  <text x="1515" y="302" text-anchor="middle" class="small">NIC / AP / Switch uplink</text>
+
+  <rect x="1070" y="560" width="300" height="170" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
+  <text x="1220" y="605" text-anchor="middle" class="boxTitle">Custom Adapter B</text>
+  <text x="1220" y="632" text-anchor="middle" class="small">RJ45 ↔ RJ12 (same mapping)</text>
+  <text x="1220" y="660" text-anchor="middle" class="small">Breaks out P1 from 4/5/7/8</text>
+
+  <rect x="1410" y="600" width="290" height="130" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
+  <text x="1555" y="645" text-anchor="middle" class="boxTitle">P1 Reader / Gateway</text>
+  <text x="1555" y="672" text-anchor="middle" class="small">RJ12 input</text>
+
+  <!-- Center trunk -->
+  <rect x="780" y="320" width="240" height="80" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <text x="900" y="350" text-anchor="middle" class="boxTitle">Single Existing Cable Run</text>
+  <text x="900" y="376" text-anchor="middle" class="small">1x RJ45 (8 wires)</text>
+
+  <!-- Connections left -->
+  <line x1="370" y1="285" x2="470" y2="330" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="390" y="310" class="label">RJ45 patch</text>
+
+  <line x1="370" y1="665" x2="450" y2="645" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="378" y="642" class="label">RJ12 cable</text>
+
+  <line x1="600" y1="560" x2="600" y2="470" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="614" y="520" class="label">RJ45 patch (P1 branch)</text>
+
+  <line x1="730" y1="360" x2="780" y2="360" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)" />
+
+  <!-- Connections right -->
+  <line x1="1020" y1="360" x2="1070" y2="360" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)" />
+
+  <line x1="1330" y1="330" x2="1370" y2="285" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="1328" y="302" class="label" text-anchor="end">RJ45 patch</text>
+
+  <line x1="1200" y1="470" x2="1220" y2="560" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="1234" y="515" class="label">RJ45 patch (P1 branch)</text>
+
+  <line x1="1370" y1="645" x2="1410" y2="665" stroke="#334155" stroke-width="3" marker-end="url(#arrow)" />
+  <text x="1382" y="640" class="label">RJ12 cable</text>
+
+  <!-- Footer notes -->
+  <rect x="80" y="910" width="1640" height="46" rx="10" fill="#ffedd5" stroke="#fb923c" />
+  <text x="900" y="940" text-anchor="middle" class="warn">
+    Important: passive splitters only work as a matched pair and only with 10/100 Ethernet (not 1000Base-T).
+  </text>
+</svg>
