@@ -29,6 +29,13 @@ The setup uses:
 
 ![Complete setup with two passive splitters and two custom RJ12 to RJ45 adapters](images/full-setup-diagram.svg)
 
+## Single-End Assembly (Alternative Option)
+
+This is an alternative option if passive splitters are not available, or if there is not enough room in the enclosure/box for splitter hardware.
+Use two identical assemblies: one on Side A and one on Side B of the shared RJ45 cable run.
+
+![Single cable-side assembly: RJ45 trunk split into RJ45 Ethernet and RJ12 P1 via custom adapter](images/RJ45-RJ12-RJ45-single-cable.png)
+
 ## Port Pairing Rule (Critical)
 
 - The two splitter ports must be used consistently end-to-end.
