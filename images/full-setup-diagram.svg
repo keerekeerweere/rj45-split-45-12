@@ -33,7 +33,7 @@
   <rect x="450" y="560" width="300" height="170" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
   <text x="600" y="605" text-anchor="middle" class="boxTitle">Custom Adapter A</text>
   <text x="600" y="632" text-anchor="middle" class="small">RJ12 ↔ RJ45 (P1 mapping)</text>
-  <text x="600" y="660" text-anchor="middle" class="small">Uses RJ45 pins 4/5/7/8</text>
+  <text x="600" y="660" text-anchor="middle" class="small">Uses RJ45 pins 1/2/3/6 on split-out port</text>
 
   <rect x="470" y="250" width="260" height="220" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
   <text x="600" y="287" text-anchor="middle" class="boxTitle">Passive Splitter A</text>
@@ -43,7 +43,7 @@
   <text x="600" y="376" text-anchor="middle" class="small">Ethernet branch: 1,2,3,6</text>
 
   <rect x="500" y="400" width="200" height="40" rx="8" fill="#fee2e2" stroke="#ef4444" />
-  <text x="600" y="426" text-anchor="middle" class="small">P1 branch: 4,5,7,8</text>
+  <text x="600" y="426" text-anchor="middle" class="small">P1 split-out branch: 1,2,3,6</text>
 
   <!-- Right zone -->
   <rect x="980" y="130" width="760" height="760" rx="18" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
@@ -57,7 +57,7 @@
   <text x="1200" y="376" text-anchor="middle" class="small">Ethernet branch: 1,2,3,6</text>
 
   <rect x="1100" y="400" width="200" height="40" rx="8" fill="#fee2e2" stroke="#ef4444" />
-  <text x="1200" y="426" text-anchor="middle" class="small">P1 branch: 4,5,7,8</text>
+  <text x="1200" y="426" text-anchor="middle" class="small">P1 split-out branch: 1,2,3,6</text>
 
   <rect x="1370" y="230" width="290" height="110" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
   <text x="1515" y="275" text-anchor="middle" class="boxTitle">Ethernet Device</text>
@@ -66,7 +66,7 @@
   <rect x="1070" y="560" width="300" height="170" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
   <text x="1220" y="605" text-anchor="middle" class="boxTitle">Custom Adapter B</text>
   <text x="1220" y="632" text-anchor="middle" class="small">RJ45 ↔ RJ12 (same mapping)</text>
-  <text x="1220" y="660" text-anchor="middle" class="small">Breaks out P1 from 4/5/7/8</text>
+  <text x="1220" y="660" text-anchor="middle" class="small">Breaks out P1 on RJ45 pins 1/2/3/6</text>
 
   <rect x="1410" y="600" width="290" height="130" rx="12" fill="#ffffff" stroke="#64748b" stroke-width="2" />
   <text x="1555" y="645" text-anchor="middle" class="boxTitle">P1 Reader / Gateway</text>

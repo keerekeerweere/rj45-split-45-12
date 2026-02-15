@@ -36,20 +36,20 @@ The setup uses:
 For 10/100 Ethernet + P1 sharing on one cable:
 
 - Ethernet branch uses pins `1,2,3,6`
-- P1 branch uses pins `4,5,7,8`
+- P1 split-out branch also presents pins `1,2,3,6` (mapped to trunk pins `4,5,7,8`)
 
 ![Passive RJ45 splitter reference](images/RJ45-passive-splitter.png)
 
-| Trunk RJ45 Pin | Ethernet RJ45 Branch | P1 RJ45 Branch |
+| Trunk RJ45 Pin | Ethernet RJ45 Branch Pin | P1 Split-Out RJ45 Branch Pin |
 |---|---|---|
 | 1 | 1 | - |
 | 2 | 2 | - |
 | 3 | 3 | - |
-| 4 | - | 4 |
-| 5 | - | 5 |
+| 4 | - | 1 |
+| 5 | - | 2 |
 | 6 | 6 | - |
-| 7 | - | 7 |
-| 8 | - | 8 |
+| 7 | - | 3 |
+| 8 | - | 6 |
 
 ### 2) RJ45 Ethernet (TIA-568B, 10/100Base-TX)
 
@@ -77,18 +77,19 @@ For 10/100 Ethernet + P1 sharing on one cable:
 
 ### 4) Custom RJ12 <-> RJ45 Adapter (This Project)
 
-This custom mapping is used so P1 can run over the splitter's secondary pair set (`4,5,7,8`):
+This custom mapping uses RJ45 pins `1,2,3,6` on the split-out P1 port.
+Inside the splitter pair, these are transported over trunk pins `4,5,7,8`.
 
 ![Custom RJ12 to RJ45 cable mapping](images/rj12-rj45-schema.png)
 
-| RJ12 Pin | P1 Signal | RJ45 Pin (P1 Branch) |
-|---|---|---|
-| 1 | +5V | 7 |
-| 2 | Data Request | 8 |
-| 3 | Data GND | 5 |
-| 4 | NC | - |
-| 5 | Data | 4 |
-| 6 | Power GND | 5 (tied with pin 3) |
+| RJ12 Pin | P1 Signal | RJ45 Pin (P1 Split-Out Port) | Trunk Pin Used Between Splitters |
+|---|---|---|---|
+| 1 | +5V | 3 | 7 |
+| 2 | Data Request | 6 | 8 |
+| 3 | Data GND | 2 | 5 |
+| 4 | NC | - | - |
+| 5 | Data | 1 | 4 |
+| 6 | Power GND | 2 (tied with pin 3) | 5 |
 
 ## Files
 
